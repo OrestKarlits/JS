@@ -85,7 +85,146 @@
 // Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
 
 
-let p = [123, true, 'fsdsfsd', 566, 'qweqqqqqqqq', 456, false, 'fdksofksofk', 445, 'fasfafafcasfdvmd']
-for (let lll = 0; lll < p.length; lll++) {
-    console.log(p[lll])
-}
+// let p = [123, true, 'fsdsfsd', 566, 'qweqqqqqqqq', 456, false, 'fdksofksofk', 445, 'fasfafafcasfdvmd']
+// for (let lll = 0; lll < p.length; lll++) {
+//     console.log(p[lll])
+// }
+
+
+
+// Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
+
+
+
+// let aaa = [true, 48, 'ajsnja', 456, 'qwertyu', false, 123, 'plkjnhv', 69, true]
+// for (b = 0; b < aaa.length; b++) {
+//     if (typeof aaa[b] === 'boolean') {
+//         console.log(aaa[b])
+//     }
+// }
+
+
+
+
+// Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
+
+
+
+
+// let asd = [true, 121, 'sadasdas', 147, false, 'dsada', 85, true, 'vbnhjkl', 951, 'xcfghj', 753];
+//  for (zxc = 0; zxc < asd.length; zxc++) {
+//      if (typeof asd[zxc]=== 'number') {
+//         console.log(asd[zxc]);
+//      }
+//  }
+
+
+
+
+
+// Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
+
+
+// let vsjda = [true, 77878, 'dasda', false, 151456, 'qweuqiwu', 4546456, true, 'sdnjasnjsnajda', 165651];
+// for (xxx = 0; xxx < vsjda.length; xxx++) {
+//     if (typeof vsjda[xxx] === 'string') {
+//        console.log(vsjda[xxx]);
+//     }
+// }
+
+
+
+// Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+
+
+
+// let xxx = [];
+// xxx[0] = 10;
+// xxx[1] = true;
+// xxx[2] = 'asdfa';
+// xxx[3] = 123;
+// xxx[4] = 'asadca';
+// xxx[5] = false;
+// xxx[6] = 852;
+// xxx[7] = 'cdahsbjacn';
+// xxx[8] = true;
+// xxx[9] = 'lkjhgss';
+
+// for (let zzz = 0; zzz < xxx.length; zzz++) {
+//     console.log(xxx[zzz]);
+// }
+
+
+
+// Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+
+// for (let fff = 0; fff < 10; fff++) {
+//     console.log(fff);
+//     document.write(fff + ' ');
+// }
+
+
+
+// Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+
+
+
+// for (let cvbn = 0; cvbn < 100; cvbn++) {
+//     console.log(cvbn);
+//     document.write(cvbn + " ");
+// }
+
+
+
+
+// Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+
+
+
+// for (let ghjk = 0; ghjk < 100; ghjk+=2) {
+//     console.log(ghjk);
+//   document.write(ghjk + " ");
+// }
+
+
+// Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+
+// перший варіант
+
+// for (let bmmm = 0; bmmm < 100; bmmm++) {
+//         if(bmmm % 2 === 0){
+//             console.log( bmmm + ' ');
+//             document.write( bmmm + ' ');
+//         }
+//     }
+
+
+// другий варіант
+
+// for (let bmmm = 0; bmmm < 100; bmmm+=2) {
+//             console.log( bmmm + ' ');
+//             document.write( bmmm + ' ');
+//         }
+
+
+// Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+
+
+// // перший варіант
+
+// for (let bmmm = 0; bmmm < 100; bmmm++) {
+//         if(bmmm % 2 === 1){
+//             console.log( bmmm + ' ');
+//             document.write( bmmm + ' ');
+//         }
+//     }
+
+// другий варіант
+
+// for (let bmmm = 1; bmmm < 100; bmmm+=2) {
+//             console.log( bmmm + ' ');
+//             document.write( bmmm + ' ');
+//         }
+
+
+// незнаю як на практиці але як на мене другий варіант кращий і принаймі мені зрозуміліший запис
