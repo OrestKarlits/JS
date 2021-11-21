@@ -79,8 +79,11 @@
 
 // створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
-let massuv = [{id: 100, name: 'ghjklsfsds', age: 100}, {id: 500, name: 'gggggggggggggggg', age: 500},
-    {id: 100500, name: 'gggggggggggggggg', age: 100500}, {id: 500100, name: 'gggggggggggggggg', age: 500100}]
-function funmas (list) {
-
-}
+// let massuv = [{id: 100, name: 'ghjklsfsds', age: 100}, {id: 500, name: 'vsbajhcbans', age: 500},
+//     {id: 100500, name: 'qwertyuZZ', age: 100500}, {id: 500100, name: 'iahjubvfdxfasxc', age: 500100}];
+// function funmas (list) {
+// for (let item of list){
+//     document.write(`<div>${item.id} - ${item.name} - ${item.age}</div>`);
+// }
+// }
+// funmas(massuv);
