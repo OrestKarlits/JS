@@ -150,14 +150,14 @@
 // Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 
 
-// function reverse(arr) {
-//     let newArr = [5, 7, 10];
-//     for (let i = newArr.length - 1, ri = 0; i >= 0; i--, ri++) {
-//         newArr[ri] = newArr[i];
-//     }
-//     return newArr;
-// }
-// document.write(reverse());
+function reverse(arr) {
+    let newArr = [];
+    for (let i = newArr.length - 1, ri = 0; i >= 0; i--, ri++) {
+        newArr[ri] = newArr[i];
+    }
+    return newArr;
+}
+document.write(reverse(5, 7, 10));
 
 // Це завдання теж не зрозумів дивився на розвязок завдань на гіті в розділі resolve і там як на мене помилка тоді переглядав
 // відповіді від Сергія дойшов до такого і чомусь згіднр 154 рядка в мене мало б виводитись 10, 7, 5 а виводиться 10, 7, 10
