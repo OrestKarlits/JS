@@ -18,9 +18,19 @@
 
 
 // let element = document.getElementById('cvb');
+// let but = true;
 // element.onclick = function () {
-//     element.style.display = 'none';
+//     if (but){
+//         let ul_on = document.getElementById('ul');
+//         ul_on.style.display = 'none';
+//     }
+//     else {
+//         let ul_of = document.getElementById('ul');
+//         ul_of.style.display = 'block';
+//     }
+//     but = !but;
 // }
+
 
 // створити інпут який приймає вік людини та кнопку яка підтверджує дію.
 //     При натисканні на кнопку зчитати інформацію з інпуту та перевірити
