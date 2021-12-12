@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.posts {
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid coral;
+    border-radius: 20px;
+    cursor: pointer;
+    background: aqua;
+}
+.posts :hover {
+    background: red;
+}
+.item h2 {
+    height: 30px;
+}
+.item h3 {
+    height: 35px;
+}
+
+.item h4 {
+    height: 60px;
+}
+
+.item h5 {
+    height: 120px;
+}
+.bat {
+    background: yellow;
+    color: blue;
+    height: 35px;
+}
+.bat:hover{
+    background: blue;
+    color: yellow;
+}
+
+.div_Comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.div_Comment:hover {
+    background: #db39a9;
+    transition: .7s;
+    transform: rotateX(5grad);
+}
+
+.div_Comment h2 {
+    height: 25px;
+}
+.div_Comment h2:hover,
+.div_Comment h3:hover,
+.div_Comment h4:hover,
+.div_Comment h5:hover{
+    color: white;
+    background: none;
+}
+
+.div_Comment h3 {
+    height: 65px;
+}
+
+.div_Comment h4 {
+    height: 40px;
+}
+
+.div_Comment h5 {
+    height: 85px;
+}
