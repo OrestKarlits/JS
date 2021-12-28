@@ -15,10 +15,10 @@
     //     return new Promise((resolve, reject) => {
     //         setTimeout(() => {
     //             if (work_day) {
-    //                 resolve('Треба ставати')
+    //                 resolve('Треба ставати');
     //             }
-    //             reject('Спимо далі')
-    //         }, 400)
+    //             reject('Спимо далі');
+    //         }, 400);
     //     })
     // }
     //
@@ -26,9 +26,9 @@
     //     return new Promise((resolve) => {
     //         setTimeout(() => {
     //             if (cooking) {
-    //                 resolve(`Снідаю ${cooking}`)
+    //                 resolve(`Снідаю ${cooking}`);
     //             }
-    //         }, 600)
+    //         }, 600);
     //     })
     // }
     //
@@ -36,49 +36,49 @@
     //     return new Promise(resolve => {
     //         setTimeout(() => {
     //             if (clothes) {
-    //                 resolve('Вдягаюсь і йду на роботу')
+    //                 resolve('Вдягаюсь і йду на роботу');
     //             }
-    //         }, 900)
+    //         }, 900);
     //     })
     // }
     //
     // function work() {
     //     return new Promise((resolve) => {
     //         setTimeout(() => {
-    //             resolve('працюю')
-    //         }, 1700)
+    //             resolve('працюю');
+    //         }, 1700);
     //     })
     // }
     //
     // function drink_tea() {
     //     return new Promise(resolve => {
     //         setTimeout(() => {
-    //             resolve("п'ю чай")
-    //         }, 350)
+    //             resolve("п'ю чай");
+    //         }, 350);
     //     })
     // }
     //
     // function obid(obid) {
     //     return new Promise(resolve => {
     //         setTimeout(() => {
-    //             resolve(`обідаю ${obid}`)
-    //         }, 390)
+    //             resolve(`обідаю ${obid}`);
+    //         }, 390);
     //     })
     // }
     //
     // function go_home() {
     //     return new Promise(resolve => {
     //         setTimeout(() => {
-    //             resolve('Йду додому')
-    //         }, 1600)
+    //             resolve('Йду додому');
+    //         }, 1600);
     //     })
     // }
     //
     // function shower() {
     //     return new Promise(resolve => {
     //         setTimeout(() => {
-    //             resolve('Прийшовши з роботи йду в душ')
-    //         }, 600)
+    //             resolve('Прийшовши з роботи йду в душ');
+    //         }, 600);
     //     })
     // }
     //
@@ -86,7 +86,7 @@
     //     return new Promise(resolve => {
     //         setTimeout(() => {
     //             resolve('Вечеряю');
-    //         }, 350)
+    //         }, 350);
     //     })
     // }
     //
@@ -94,7 +94,7 @@
     //     return new Promise(resolve => {
     //         setTimeout(() => {
     //             resolve('вчу джава-скріпт');
-    //         }, 820)
+    //         }, 820);
     //     })
     // }
     //
@@ -102,7 +102,7 @@
     //     return new Promise(resolve => {
     //         setTimeout(() => {
     //             resolve(`Лягаю спати ${i_think}`);
-    //         }, 8300)
+    //         }, 8300);
     //     })
     // }
     //
@@ -163,7 +163,7 @@
     //     })
     //     .then(learning => {
     //         console.log(learning);
-    //         return sleep('і думаю я тупий, нашо я пішов в те Ойті')
+    //         return sleep('і думаю я тупий, нашо я пішов в те Ойті');
     //     })
     //
     //     .then(go_sleep => {
@@ -512,27 +512,32 @@ function sleep(i_think) {
 }
 
 async function get_info() {
-    let start = await wakeup(true);
-    let snidanok = await breakfest(start);
-    let clothe = await clothes(snidanok);
-    let worked = await work(clothe);
-    let tea = await drink_tea(worked);
-    let eat = await obid(tea);
-    let home = await go_home(eat);
-    let water = await shower(home);
-    let vecherya = await dinner(water);
-    let js = await learn(vecherya);
-    let sleeping = await sleep(js);
-    console.log(start);
-    console.log(snidanok);
-    console.log(clothe);
-    console.log(worked);
-    console.log(tea);
-    console.log(eat);
-    console.log(home);
-    console.log(water);
-    console.log(vecherya);
-    console.log(js);
-    console.log(sleeping);
+    try {
+        let start = await wakeup(true);
+        console.log(start);
+        let snidanok = await breakfest(start);
+        console.log(snidanok);
+        let clothe = await clothes(snidanok);
+        console.log(clothe);
+        let worked = await work(clothe);
+        console.log(worked);
+        let tea = await drink_tea(worked);
+        console.log(tea);
+        let eat = await obid(tea);
+        console.log(eat);
+        let home = await go_home(eat);
+        console.log(home);
+        let water = await shower(home);
+        console.log(water);
+        let vecherya = await dinner(water);
+        console.log(vecherya);
+        let js = await learn(vecherya);
+        console.log(js);
+        let sleeping = await sleep(js);
+        console.log(sleeping);
+    }
+    catch (erora) {
+        console.error(erora);
+    }
 }
 get_info();
