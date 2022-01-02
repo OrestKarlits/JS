@@ -14,7 +14,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             but.classList.add('button');
             but.innerText = 'deteils-full';
             but.onclick = function () {
-                location.href='./user-details.html?id='+user.id;
+                location.href='./user-details.html?id=' + user.id;
 
 
                //  fetch('https://jsonplaceholder.typicode.com/users')
@@ -32,7 +32,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
                // <h2>Name: ${user_full.name}</h2>
                //  <h2>Username: ${user_full.username}</h2>
                //  <h2>Email: ${user_full.email}</h2>
-               //  <h3>Street: ${user_full.address.street}</h3>
                //  <h3>Suite: ${user_full.address.suite}</h3>
                //  <h3>City: ${user_full.address.city}</h3>
                //  <h3>Zipcode: ${user_full.address.zipcode}</h3>
@@ -40,10 +39,12 @@ fetch('https://jsonplaceholder.typicode.com/users')
                //  <h3>Geo - lng: ${user_full.address.geo.lng}</h3>
                //  <h3>Phone: -  ${user_full.phone}</h3>
                //  <h3>Website: -  ${user_full.website}</h3>
+               //  <h3>Street: ${user_full.address.street}</h3>
                //  <h3>Company name: -  ${user_full.company.name}</h3>
                //  <h3>Company catchPhrase: -  ${user_full.company.catchPhrase}</h3>
                //  <h3>Company bs: -  ${user_full.company.bs}</h3>`;
-               //              div.appendChild(div_full);
+               //              div.appendChild(htmlDivElement);
+               //              htmlDivElement.appendChild(div_full);
                //              }
                //          }
                //      })
