@@ -5,7 +5,6 @@ fetch('https://jsonplaceholder.typicode.com/users/' + id)
         return get.json();
     })
     .then((user) => {
-        let stringify = JSON.stringify(user);
         let wrap = document.createElement('div');
         wrap.classList.add('wrap');
         let info_user = document.getElementsByClassName('info_user')[0];
@@ -41,15 +40,22 @@ fetch('https://jsonplaceholder.typicode.com/users/' + id)
                     })
                     .then((posts) => {
                         for (let post of posts) {
-                            let post_div = document.createElement('div');
-                            post_div.classList.add('post_div');
-                            let div_post = document.createElement('div');
-                            div_post.innerHTML =
+                            let wrap_posts = document.createElement('div');
+                            wrap_posts.classList.add('wrap_posts')
+                            let posts = document.createElement('div');
+                            posts.classList.add('posts_div');
+                            posts.innerHTML =
                                 `<h1>Name:---- ${post.title}</h1>`;
-                            post_div.appendChild(div_post);
-                            wrap.appendChild(post_div);
+                            wrap_posts.appendChild(posts);
+                            wrap.appendChild(wrap_posts);
+                            let button_post = document.createElement('button');
+                            button_post.classList.add('button_post');
+                            button_post.innerText = 'post of current user full';
+                            posts.appendChild(button_post);
+                            button_post.onclick = function () {
+                                location.href = './post-details.html?id=' + post.id;
+                            }
                         }
-
                     })
                     btn.disabled = true;
                 }

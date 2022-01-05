@@ -3,7 +3,7 @@ body {
     justify-content: center;
 }
 .wrap {
-    width: 650px;
+    width: 90%;
     margin: 10px;
     padding: 10px;
     border: 2px solid coral;
@@ -25,6 +25,7 @@ body {
     width: 260px;
     height: 90px;
     font-size: 25px;
+    cursor: pointer;
 }
 
 .button:hover{
@@ -33,4 +34,26 @@ body {
 }
 .post_div:hover {
     background: green;
+}
+.wrap_posts {
+    background: green;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+.posts_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+.button_post {
+    background: #db39a9;
+    font-size: 28px;
+    height: 90px;
+    cursor: pointer;
+}
+.button_post:hover {
+    background: aqua;
+    color: gray;
 }
