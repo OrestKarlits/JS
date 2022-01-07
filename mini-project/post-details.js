@@ -1,6 +1,6 @@
 let post_url = new URL(location.href);
-let post_id = post_url.searchParams.get('userId');
-fetch('https://jsonplaceholder.typicode.com/posts/43')
+let post_id = post_url.searchParams.get('id');
+fetch('https://jsonplaceholder.typicode.com/posts/2')
 .then((getpost) => {
     return getpost.json()
 })

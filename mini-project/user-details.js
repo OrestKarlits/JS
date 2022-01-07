@@ -7,7 +7,8 @@ fetch('https://jsonplaceholder.typicode.com/users/' + id)
     .then((user) => {
         let wrap = document.createElement('div');
         wrap.classList.add('wrap');
-        let info_user = document.getElementsByClassName('info_user')[0];
+        let info_user = document.createElement('div');
+        info_user.classList.add('info_user');
         info_user.innerHTML = `
                       <h1>ID: ${user.id}</h1>
                <h2>Name: ${user.name}</h2>
