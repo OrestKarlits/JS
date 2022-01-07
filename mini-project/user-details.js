@@ -53,7 +53,7 @@ fetch('https://jsonplaceholder.typicode.com/users/' + id)
                             button_post.innerText = 'post of current user full';
                             posts.appendChild(button_post);
                             button_post.onclick = function () {
-                                location.href = './post-details.html?id=' + post.id;
+                                location.href = './post-details.html?postid=' + post.id;
                             }
                         }
                     })
